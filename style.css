@@ -1,0 +1,285 @@
+/* Reset de estilos padrão */
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-image: url(./images/nathon-oski-fE42nRlBcG8-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size:105.5vw;
+}
+html{
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: 'Exo';
+  src: url(../fonts/Exo/Exo-VariableFont_wght.ttf);
+}
+
+header {
+  background-image:url(./images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  padding: 2rem 0;
+  font-family: 'Exo';
+}
+
+.shadow{
+  background-color: rgba(32, 32, 32, 0.7);
+}
+.intro{
+  background:url(./images/irene-kredenets-E95Lpkg-bgc-unsplash.jpg);
+  background-size: contain;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+header p{
+  font-size: 0.88em;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+  padding: 0.5rem 0;
+  z-index: -2;
+}
+
+
+.btn {
+  background: transparent;
+  padding: 5px;
+  margin: 15px;
+  border: none;
+  color: #faecd9;
+  text-transform: uppercase;
+  position: relative;
+  transition: .5s ease;
+  z-index: 1;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #c1a362;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  color: #272d34;
+  transition-delay: .5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: #c1a362;
+  transition: .4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+}
+
+.servicosDisp{
+  color: #faecd9;
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+.servicosDisp li{
+  margin: 40px;
+}
+
+.servicosDisp img{
+  border-radius: 40px;
+}
+
+#servicos h2,#contato h2,#agenda h2{
+  background-image: url(./images/james-day-5YWf-5hyZcw-unsplash.jpg);
+  background-size:15vh;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.servicosDisp p{
+  transition: all 0.5s linear;
+  background: linear-gradient(15deg,#fbd148, #272d34,#466786);
+  border-radius: 8px;
+  background-size: 300% 400%;
+}
+
+.servicosDisp p:hover{
+  background-position: center right, top right;
+}
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+#agenda{
+  background:rgb(17, 17, 17,0.6);
+  color: #faecd9;
+  border-radius: 32px 64px;
+  font-size: 0.88em;
+}
+
+#agenda img{
+  position: absolute;
+  right: 40px;
+  transform: translateY(-50px);
+  width: 50vw;
+  height: 80vh;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+
+form input, form select {
+  width: 40%;
+  padding: 0.4rem;
+  margin: 0.4rem 0;
+  border: 1px solid #ccc;
+  border-radius: 40px;
+}
+
+form button {
+  margin: 10px;
+  background-color: transparent;
+  color: #c1a362;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+  transform: translateY(15px);
+  transition:all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  border: 2px solid #c1a362;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+form button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: #c1a362;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+form button:hover::before {
+  scale: 3;
+}
+
+form button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+form button:active {
+  scale: 1;
+}
+
+#contato{
+color: #faecd9;
+padding-bottom: 10px;
+
+}
+
+.bgCtt{
+  margin-top: 15px;
+  background:url(./images/ta-focando-i3x4Bjmt-Js-unsplash.jpg);
+  background-size:80vw 95vh;
+  background-position: center;
+  border-radius: 40px;
+
+}
+footer {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #444;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+/* Estilos para dispositivos menores (responsividade) */
+@media (max-width:767px) {
+  #agenda img{
+    height: 50vh;
+  }
+  header {
+      font-size: 1.5rem;
+  }
+  nav ul {
+      flex-direction: column;
+  }
+  nav li {
+      margin: 0.5rem 0;
+  }
+  section {
+      padding: 1rem;
+  }
+  form label, form input, form select {
+      width: 100%;
+  }
+  footer {
+      font-size: 0.8rem;
+  }
+  body{
+    background-size: 242vh;
+  }
+  .servicosDisp{
+    display: inline-block;
+  }
+}
+@media (481px<= width <= 991px) {
+  #agenda img{
+    height: 30vh;
+  }
+  .servicosDisp{
+    flex-direction: column;
+  }
+  body{
+    background-size: 200vh;
+  }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script src="https://kit.fontawesome.com/1f8847d290.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Júnior Barbearia</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para seu arquivo CSS -->
+</head>
+<body>
+    <header>
+        <div class="shadow">
+        <div class="intro">
+        <h1><img src="./images/barber-pole-svgrepo-com.svg" width="70px">Júnior Barbearia <i class="fa-solid fa-scissors"></i></h1>
+        <p>Sua barbearia de confiança para um visual impecável.</p>
+        </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="#servicos" class="btn"><li>Nossos Serviços</li></a>
+            <a href="#agenda" class="btn"><li>Agendamento</li></a>
+            <a href="#contato" class="btn"><li>Contato</li></a>
+        </ul>
+    </nav>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul class="servicosDisp">
+            <li>
+                <img src="./images/delfina-pan-wJoB8D3hnzc-unsplash.jpg" width="300px"><p>Corte de cabelo - R$30,00</p></li>
+            <li><img src="./images/allef-vinicius-IvQeAVeJULw-unsplash.jpg" width="300px" height="450px">
+                <p>Barba - R$20,00</p></li>
+            <li><img src="./images/agustin-fernandez-1Pmp9uxK8X8-unsplash.jpg" width="300px">
+                <p>Combo (Corte de cabelo + Barba) - R$45,00</p></li>
+        </ul>
+    </section>
+
+    <section id="agenda">
+        <h2>Agendamento</h2>
+        <p>Agende seu horário conosco para um serviço de qualidade:</p>
+        <img src="./images/pexels-marcelo-verfe-18702143.jpg" width="200px">
+        <form action="https://formsubmit.co/urwistech@gmail.com" method="post">
+            <label for="data">Digite seu nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+
+            <label for="data">Escolha a data:</label>
+            <input type="date" id="data" name="data" required><br>
+
+            <label for="horario">Escolha um horário:</label>
+            <select id="horario" name="horario" required></select>
+            <br>
+
+            <label for="servico">Escolha o serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="corte">Corte de Cabelo</option>
+                <option value="barba">Barba</option>
+                <option value="combo">Combo (Corte + Barba)</option>
+            </select><br>
+
+            <button type="submit"> Agendar</button>
+            <input type="hidden" name="_subject" value="Novo Agendamento!">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://juniorbarber.netlify.app/">
+            
+        </form>
+    </section>
+    <div class="bgCtt">
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações:</p>
+        <p>Email: contato@barbeariajunior.com</p>
+        <p>Telefone: (11) 1234-5678</p>
+    </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Júnior Barbearia. Todos os direitos reservados.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
